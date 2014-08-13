@@ -39,3 +39,7 @@ $('#confirm-prev').click(function (e) {
 /* Bootstrap select */
 
 $('.selectpicker').selectpicker();
+
+/* jQuery knob */
+
+$('.dial').knob();

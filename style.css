@@ -2,7 +2,7 @@
  .board {
     width: 90%;
     margin: 0 auto;
-    height: 500px;
+    height: 550px;
     background: #fff;
     border: 2px solid #ddd;
 }
@@ -165,6 +165,7 @@ a[disabled] {
 .selectpicker {
     color: #000;
 }
+
 @media( max-width:585px) {
     .board {
         width: 90%;

@@ -1,45 +1,37 @@
 @import url(http://fonts.googleapis.com/css?family=Roboto+Condensed:400,700);
-
-.board{
+ .board {
     width: 90%;
     margin: 0 auto;
     height: 500px;
     background: #fff;
     border: 2px solid #ddd;
 }
-
 .board .nav-tabs {
     position: relative;
     margin: 0 40px;
     box-sizing: border-box;
 }
-
 .board > .board-inner {
     background-image: url('assets/stripe.png');
     display: table;
     position: relative;
     width: 100%;
 }
-
 .board > .board-inner > .nav-tabs {
     display: table-row;
     width: 100%;
 }
-
 .board > .board-inner > .nav-tabs > li {
     display: table-cell;
     width: 25%;
 }
-
-.nav-tabs > li.active > a span.round-tabs{
+.nav-tabs > li.active > a span.round-tabs {
     background: #fafafa;
 }
-
 p.narrow {
     width: 60%;
     margin: 10px auto;
 }
-
 .liner {
     height: 2px;
     background: #ddd;
@@ -51,14 +43,14 @@ p.narrow {
     top: 50%;
     z-index: 1;
 }
-
-.nav-tabs > li.active > a, .nav-tabs > li.active > a:hover, .nav-tabs > li.active > a:focus {
+.nav-tabs > li.active > a,
+.nav-tabs > li.active > a:hover,
+.nav-tabs > li.active > a:focus {
     color: #555555;
     cursor: default;
     border: 0;
     border-bottom-color: transparent;
 }
-
 span.round-tabs {
     width: 70px;
     height: 70px;
@@ -72,51 +64,42 @@ span.round-tabs {
     text-align: center;
     font-size: 25px;
 }
-
 span.round-tabs.user {
     color: #999;
     border: 2px solid #999;
 }
-
 li.active span.round-tabs.user {
     background: #fff !important;
     border: 2px solid #ddd;
     color: #999;
 }
-
 span.round-tabs.skill {
     color: #febe29;
     border: 2px solid #febe29;
 }
-
 li.active span.round-tabs.skill {
     background: #fff !important;
     border: 2px solid #ddd;
     color: #febe29;
 }
-
 span.round-tabs.rating {
     color: #3e5e9a;
     border: 2px solid #3e5e9a;
 }
-
 li.active span.round-tabs.rating {
     background: #fff !important;
     border: 2px solid #ddd;
     color: #3e5e9a;
 }
-
 span.round-tabs.done {
     color: rgb(34, 194, 34);
     border: 2px solid rgb(34, 194, 34);
 }
-
 li.active span.round-tabs.done {
     background: #fff !important;
     border: 2px solid #ddd;
     color: rgb(34, 194, 34);
 }
-
 .nav-tabs > li:after {
     content: " ";
     position: absolute;
@@ -128,7 +111,6 @@ li.active span.round-tabs.done {
     border-bottom-color: #bbb;
     transition: 0.1s ease-in-out;
 }
-
 .nav-tabs > li.active:after {
     content: " ";
     position: absolute;
@@ -138,7 +120,6 @@ li.active span.round-tabs.done {
     bottom: 0px;
     border: 10px solid transparent;
     border-bottom-color: #bbb;
-
 }
 .nav-tabs > li a {
     width: 70px;
@@ -147,80 +128,64 @@ li.active span.round-tabs.done {
     border-radius: 100%;
     padding: 0;
 }
-
 .nav-tabs > li a:hover {
     background: transparent;
 }
-
 .tab-pane {
     position: relative;
     padding-top: 50px;
 }
-
 .tab-content .head {
     font-family: 'Roboto Condensed', sans-serif;
     font-size: 25px;
     text-transform: uppercase;
     padding-bottom: 10px;
 }
-
 .btn-outline-rounded {
     padding: 10px 40px;
     margin: 20px 0;
     border: 2px solid transparent;
     border-radius: 25px;
 }
-
 .btn {
     color: #ffffff;
 }
-
 .btn.prev {
     background-color: #0088CC;
 }
-
 .btn.next {
     background-color: #0044CC;
 }
-
 .btn.done {
     background-color: #51A351;
 }
-
 a[disabled] {
     pointer-events: none;
 }
-
-@media( max-width : 585px ) {
-
+@media( max-width:585px) {
     .board {
         width: 90%;
-        height:auto !important;
+        height: auto !important;
     }
-
     span.round-tabs {
         font-size: 16px;
         width: 50px;
         height: 50px;
         line-height: 50px;
     }
-
-    .tab-content .head{
-        font-size:20px;
+    .tab-content .head {
+        font-size: 20px;
     }
-
     .nav-tabs > li a {
         width: 50px;
         height: 50px;
-        line-height:50px;
+        line-height: 50px;
     }
-
     li.active:after {
         content: " ";
         position: absolute;
         left: 35%;
     }
-
     .btn-outline-rounded {
         padding: 12px 20px;
     }

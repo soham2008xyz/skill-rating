@@ -162,6 +162,9 @@ li.active span.round-tabs.done {
 a[disabled] {
     pointer-events: none;
 }
+.selectpicker {
+    color: #000;
+}
 @media( max-width:585px) {
     .board {
         width: 90%;

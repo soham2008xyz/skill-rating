@@ -23,7 +23,7 @@
 }
 .board > .board-inner > .nav-tabs > li {
     display: table-cell;
-    width: 25%;
+    width: 20%;
 }
 .nav-tabs > li.active > a span.round-tabs {
     background: #fafafa;
@@ -90,6 +90,16 @@ li.active span.round-tabs.rating {
     background: #fff !important;
     border: 2px solid #ddd;
     color: #3e5e9a;
+}
+span.round-tabs.last-used{
+    color: #f1685e;
+    border: 2px solid #f1685e;
+}
+
+li.active span.round-tabs.last-used{
+    background: #fff !important;
+    border: 2px solid #ddd;
+    color: #f1685e;
 }
 span.round-tabs.done {
     color: rgb(34, 194, 34);

@@ -18,6 +18,11 @@ $('#skill-type-next').click(function (e) {
 
 $('#rating-next').click(function (e) {
     e.stopPropagation();
+    $('#last-used-button').trigger('click');
+});
+
+$('#last-used-next').click(function (e) {
+    e.stopPropagation();
     $('#confirm-button').trigger('click');
 });
 
@@ -31,9 +36,14 @@ $('#rating-prev').click(function (e) {
     $('#skill-type-button').trigger('click');
 });
 
-$('#confirm-prev').click(function (e) {
+$('#last-used-prev').click(function (e) {
     e.stopPropagation();
     $('#rating-button').trigger('click');
+});
+
+$('#confirm-prev').click(function (e) {
+    e.stopPropagation();
+    $('#last-used-button').trigger('click');
 });
 
 /* Bootstrap select */

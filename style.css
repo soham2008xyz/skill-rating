@@ -175,8 +175,11 @@ a[disabled] {
 .selectpicker {
     color: #000;
 }
+.desc {
+    transition: all 0.2s ease-in-out;
+}
 
-@media( max-width:585px) {
+@media (max-width:585px) {
     .board {
         width: 90%;
         height: auto !important;

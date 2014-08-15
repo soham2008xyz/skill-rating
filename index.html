@@ -152,8 +152,17 @@
 
                     <div class="tab-pane fade" id="rating">
                         <h3 class="head text-center">Please rate the skill on a scale of 1-10:</h3>
+                        <p class="lead text-center desc" id="rating-desc"></p>
                         <p class="narrow text-center">
-                            <input type="text" class="knob rating-knob" data-min="1" data-max="10" data-width="200" data-thickness=0.2 data-fgColor="#3e5e9a" data-bgcolor="#ccc" data-displayPrevious=true value="1">
+                            <script type="text/javascript">
+                                var rating_values = [
+                                    /* Rating values go here */
+                                    1 : "Rating 1",
+                                    2 : "Rating 2",
+                                    3 : "Rating 3"
+                                ];
+                            </script>
+                            <input type="text" class="knob rating-knob" data-min="1" data-max="3" data-width="200" data-thickness=0.2 data-fgColor="#3e5e9a" data-bgcolor="#ccc" data-displayPrevious=true value="1">
                         </p>
 
                         <p class="text-center">
@@ -164,8 +173,17 @@
 
                     <div class="tab-pane fade" id="last-used">
                         <h3 class="head text-center">When did you last use this skill?</h3>
+                        <p class="lead text-center desc" id="last-used-desc"></p>
                         <p class="narrow text-center">
-                            <input type="text" class="knob last-used-knob" data-min="1" data-max="10" data-width="200" data-thickness=0.2 data-fgColor="#3e5e9a" data-bgcolor="#ccc" data-displayPrevious=true value="1">
+                            <script type="text/javascript">
+                                var skill_values = [
+                                    /* Skill last used values go here */
+                                    "Test 1", // Skill level - 1
+                                    "Test 2", // Skill level - 2
+                                    "Test 3"  // Skill level - 3 ...
+                                ];
+                            </script>
+                            <input type="text" class="knob last-used-knob" data-min="1" data-max="3" data-width="200" data-thickness=0.2 data-fgColor="#f1685e" data-bgcolor="#ccc" data-displayPrevious=true value="1">
                         </p>
 
                         <p class="text-center">
